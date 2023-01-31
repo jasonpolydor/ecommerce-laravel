@@ -2,6 +2,8 @@
 
 @section('content')
 
-Hello
+@if(session('message'))
+    {{ session('message') }}
+@endif
 
 @endsection
